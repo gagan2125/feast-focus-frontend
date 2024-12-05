@@ -17,7 +17,7 @@ const Login = () => {
         </div>
         {/* Welcome Message */}
         <h2 className="text-sm font-medium text-gray-800 text-center  mt-0">
-          Welcome back
+          Welcome Back
         </h2>
         <p className="text-xs text-gray-500 text-center mt-1">
           Please enter your details to login in.
