@@ -1,9 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGoogle, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Login = () => {
+  const navigate = useNavigate(); // Hook to navigate programmatically
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Perform login logic here (validation/authentication)
+    navigate("/dashboard"); // Navigate to the dashboard
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-sm bg-white shadow-lg rounded-[20px] p-6">
@@ -41,7 +50,7 @@ const Login = () => {
           <hr className="flex-1 border-gray-300" />
         </div>
         {/* Form */}
-        <form className="space-y-5">
+        <form className="space-y-5" onSubmit={handleLogin}>
           {/* Email Input */}
           <div>
             <label className="block text-sm font-medium text-gray-600">
