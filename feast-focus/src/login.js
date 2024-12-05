@@ -41,11 +41,11 @@ const Login = () => {
           <hr className="flex-1 border-gray-300" />
         </div>
         {/* Form */}
-        <form className="space-y-3">
+        <form className="space-y-5">
           {/* Email Input */}
           <div>
             <label className="block text-sm font-medium text-gray-600">
-              Email Address
+              {/* Email Address */}
             </label>
             <input
               type="email"
@@ -57,7 +57,7 @@ const Login = () => {
           {/* Phone Number Input */}
           <div>
             <label className="block text-sm font-medium text-gray-600">
-              Phone Number
+              {/* Phone Number */}
             </label>
             <input
               type="tel"
@@ -69,7 +69,7 @@ const Login = () => {
           {/* Password Input */}
           <div>
             <label className="block text-sm font-medium text-gray-600">
-              Password
+              {/* Password */}
             </label>
             <input
               type="password"
